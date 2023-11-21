@@ -106,9 +106,13 @@ body {
 	background-color: #BEB45A;
 	border-radius:0 ;
 	cursor: pointer;
+	color: black;
 }
 .nav-pills .nav-link {
 	color: #000
+}
+.nav-item span:hover{
+	cursor: pointer;
 }
 .item-column {
 	position: relative;
@@ -244,6 +248,7 @@ body {
 	right: 0;
 	z-index: -1;
 }
+
 .form-container {
 	flex : 2;
 
