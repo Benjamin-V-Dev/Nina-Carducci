@@ -7,27 +7,23 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
+	<link rel="preload" href="./assets/bootstrap/bootstrap.min.css" as="style">
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="./assets/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet" defer>
-
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
-	<script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
-	<script src="./assets/maugallery.js" defer></script>
-	<script src="./assets/scripts.js" defer></script>
+	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
 
 	<meta property="og:title" content="Nina Carducci - Photographe à Bordeaux">
 	<meta property="og:description" content="Découvrez le travail de Nina Carducci, photographe professionnelle basée à Bordeaux. Ouvert du lundi au vendredi de 10h à 19h - 68 Avenue Alsace-Lorraine, 33200, Bordeaux">
-	<meta property="og:image" content="./assets/images/nina.webp">
+	<meta property="og:image" content="./assets/images/avif/nina.avif">
 	<meta property="og:url" content="https://www.ninacarducci-photo.fr">
 	<meta property="og:type" content="website">
 	
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:title" content="Nina Carducci - Photographe à Bordeaux">
 	<meta name="twitter:description" content="Explorez l'art de la photographie avec Nina Carducci, basée à Bordeaux. Disponible du lundi au vendredi de 10h à 19h - Appelez le 05.56.67.78.89 pour réserver.">
-	<meta name="twitter:image" content="./assets/images/nina.webp">
+	<meta name="twitter:image" content="./assets/images/avif/nina.avif">
 
 </head>
 <body>
@@ -44,7 +40,7 @@
 	</div>
 </header>
 <main>
-	<setion id="header">
+	<section id="header">
 		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 			<div class="carousel-indicators">
 				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -52,34 +48,17 @@
 				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
 			</div>
 			<div class="carousel-inner">
+				<div class="carousel-item">
+					<img srcset="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.avif 1921w,
+							./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash_mobile.avif 650w" sizes="100vw" src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash_mobile.avif" class="d-block w-100 h-auto" width="1921" height="888" alt="Plan large de jeunes gens s'amusant à un concert.">
+				</div>
+				<div class="carousel-item">
+					<img loading="lazy" srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.avif 1921w,
+							./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash_mobile.avif 650w" sizes="100vw" src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash_mobile.avif" class="d-block w-100 h-auto" width="1921" height="888" alt="Plan large de jes marchant sur un passage piéton.">
+				</div>
 				<div class="carousel-item active">
-					<img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-650.webp"
-						 srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-650.webp 650w,
-								 ./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-1920.webp 1920w"
-						 sizes="(max-width: 650px) 650px,
-								1920px"
-						 class="d-block w-100"
-						 alt="Homme d'affaires traversant un passage piéton.">
-				</div>
-				<div class="carousel-item">
-					<img loading="lazy"
-						 src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-650.webp"
-						 srcset="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-650.webp 650w,
-								 ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-1920.webp 1920w"
-						 sizes="(max-width: 650px) 650px,
-								1920px"
-						 class="d-block w-100"
-						 alt="Foule animée lors d'un concert, exprimant la joie et l'excitation.">
-				</div>
-				<div class="carousel-item">
-					<img loading="lazy"
-						 src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-650.webp"
-						 srcset="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-650.webp 650w,
-								 ./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-1920.webp 1920w"
-						 sizes="(max-width: 650px) 650px,
-								1920px"
-						 class="d-block w-100"
-						 alt="Mariés s'embrassant passionnément sur une piste de danse entourée par des invités.">
+					<img loading="lazy" srcset="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.avif 1921w,
+							./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash_mobile.avif 650w" sizes="100vw" src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash_mobile.avif" class="d-block w-100 h-auto" width="1921" height="888" alt="Un couple de jeunes mariés s'embrassant lors de la première danse.">
 				</div>
 			</div>
 			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -94,7 +73,7 @@
 	</section>
 	<section id="about">
 		<figure class="picture left">
-			<img src="./assets/images/nina-500.webp" alt="Jeune femme aux cheveux bouclés, vêtue d'un haut rayé et d'une salopette en jean">
+			<img src="./assets/images/avif/nina.avif" alt="Jeune femme aux cheveux bouclés, vêtue d'un haut rayé et d'une salopette en jean">
 		</figure>
 		<div id="about-me">
 			<h2 class="about-me__title">A propos de moi</h2>
@@ -108,76 +87,40 @@
 		<div class="container py-3">
 			<div class="gallery" style="display: none">
 				<img loading="lazy" data-gallery-tag="Concert" class="gallery-item"
-					src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash-650.webp"
-					srcset="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash-650.webp 650w,
-							./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp 1920w"
-					sizes="(max-width: 650x) 650px,
-						   1920px"
-					alt="Foule lors d'un concert, avec des lumières de scène et une structure de plafond circulaire au-dessus"/>
+					src="./assets/images/avif/aaron-paul-wnX-fXzB6Cw-unsplash.avif"
+					alt="Foule lors d'un concert, avec des lumières de scène et une structure de plafond circulaire au-dessus">
 
 				<img loading="lazy" data-gallery-tag="Entreprises" class="gallery-item"
-					src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash-650.webp"
-					srcset="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash-650.webp 650w,
-							./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp 1920w"
-					sizes="(max-width: 650px) 650px,
-							1920px"
-					alt="Homme d'affaires confiant en costume avec cravate rouge et montre, les bras croisés"/>
+				src="./assets/images/avif/ali-morshedlou-WMD64tMfc4k-unsplash.avif"
+					alt="Homme d'affaires confiant en costume avec cravate rouge et montre, les bras croisés">
 
 				<img loading="lazy" data-gallery-tag="Entreprises" class="gallery-item"
-					src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash-650.webp"
-					srcset="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash-650.webp 650w,
-							./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp 1920w"
-					sizes="(max-width: 650px) 650px,
-							1920px"
-					alt="Femme professionnelle souriante en conversation, vêtue d'un haut sombre avec col à pois"/>
+					src="./assets/images/avif/jason-goodman-tHO1_OuKbg0-unsplash.avif"
+					alt="Femme professionnelle souriante en conversation, vêtue d'un haut sombre avec col à pois">
 
 				<img loading="lazy" data-gallery-tag="Mariages" class="gallery-item"
-					src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash-650.webp"
-					srcset="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash-650.webp 650w,
-							./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp 1920w"
-					sizes="(max-width: 650px) 650px,
-							1920px"
-					alt="Mains se tendant l'une vers l'autre avec une bague de fiançailles"/>
+					src="./assets/images/avif/hannah-busing-RvF2R_qMpRk-unsplash.avif"
+					alt="Mains se tendant l'une vers l'autre avec une bague de fiançailles">
 
 				<img loading="lazy" data-gallery-tag="Portrait" class="gallery-item"
-					src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash-650.webp"
-					srcset="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash-650.webp 650w,
-							./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp 1920w"
-					sizes="(max-width: 650px) 650px,
-							1920px"
-					alt="Homme avec une expression intense, cheveux noirs courts, et portant un T-shirt noir"/>
+					src="./assets/images/avif/ade-tunji-rVkhWWZFAtQ-unsplash.avif"
+					alt="Homme avec une expression intense, cheveux noirs courts, et portant un T-shirt noir">
 
 				<img loading="lazy" data-gallery-tag="Mariages" class="gallery-item"
-					src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash-650.webp"
-					srcset="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash-650.webp 650w,
-							./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp 1920w"
-							sizes="(max-width: 650px) 650px,
-							1920px"
-					alt="Jeune couple de mariés marchant main dans la main, souriants et heureux"/>
+					src="./assets/images/avif/jakob-owens-SiniLJkXhMc-unsplash.avif"
+					alt="Jeune couple de mariés marchant main dans la main, souriants et heureux">
 
-					<img loading="lazy" data-gallery-tag="Portrait" class="gallery-item"
-					src="./assets/images/gallery/portraits/nino-van-prattenburg-443cl1uR_8-unsplash-650.webp"
-					srcset="./assets/images/gallery/portraits/nino-van-prattenburg-443cl1uR_8-unsplash-650.webp 650w,
-							./assets/images/gallery/portraits/nino-van-prattenburg-443cl1uR_8-unsplash.webp 1920w"
-					sizes="(max-width: 650px) 650px,
-							1920px"
-					alt="Jeune femme avec des lunettes, regardant au loin, vêtue d'un haut noir"/>
+				<img loading="lazy" data-gallery-tag="Portrait" class="gallery-item"
+					src="./assets/images/gallery/portraits/nino-van-prattenburg-443cl1uR_8-unsplash.webp"
+					alt="Jeune femme avec des lunettes, regardant au loin, vêtue d'un haut noir">
 					
-					<img loading="lazy" data-gallery-tag="Concert" class="gallery-item"
-					src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash-650.webp"
-					srcset="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash-650.webp 650w,
-							./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp 1920w"
-					sizes="(max-width: 650px) 650px,
-							1920px"
-					alt="Chanteur en contre-jour levant la main sur scène avec éclairage de fumée colorée"/>
-					
-					<img loading="lazy" data-gallery-tag="Entreprises" class="gallery-item"
-					src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash-650.webp"
-					srcset="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash-650.webp 650w,
-							./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp 1920w"
-					sizes="(max-width: 650px) 650px,
-							1920px"
-					alt="Femme souriante travaillant sur un ordinateur portable"/>
+				<img loading="lazy" data-gallery-tag="Concert" class="gallery-item"
+					src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp"
+					alt="Chanteur en contre-jour levant la main sur scène avec éclairage de fumée colorée">
+				
+				<img loading="lazy" data-gallery-tag="Entreprises" class="gallery-item"
+					src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp"
+					alt="Femme souriante travaillant sur un ordinateur portable">
 			</div>
 		</div>
 		<figure class="quote">
@@ -232,9 +175,6 @@
 		</figure>
 	</section>
 	<section id="contact">
-		<div class="container mb-5">
-			<iframe title="Carte de localisation de Nina Carducci Photographe à Bordeaux"></iframetitle> src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2828.772103187877!2d-0.6065364999999999!3d44.84657429999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd54d803d3494ff1%3A0x775d19897dd6276f!2s68%20Av.%20Alsace%20Lorraine%2C%2033200%20Bordeaux!5e0!3m2!1sfr!2sfr!4v1700578948324!5m2!1sfr!2sfr" width="100%" height="400px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-		</div>
 		<div class="container">
 			<div class="form-container">
 				<h2>Une question ? Une demande de devis ?</h2>
@@ -251,35 +191,38 @@
 				
 					<input type="submit" value="Envoyer"/>
 				</form>
-				</form>
 			</div>
 			<div class="picture right">
 				<img width="1200" height="800" loading="lazy"src="./assets/images/camera.webp" alt="Appareil photo ancien">
 			</div>
 		</div>
 	</section>
-	<footer class="py-3 my-4">
-		<div itemscope itemtype="http://schema.org/PhotographyBusiness">
-		  <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-			<li class="nav-item">
-			  <a href="https://www.google.com/maps/place/68+Av.+Alsace+Lorraine,+33200+Bordeaux/@44.8465743,-0.6065365,17z/data=!3m1!4b1!4m6!3m5!1s0xd54d803d3494ff1:0x775d19897dd6276f!8m2!3d44.8465743!4d-0.6065365!16s%2Fg%2F11c15dhy_v?entry=ttu" target="_blank" class="nav-link px-2 text-body-secondary mx-5" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-				<address>
-				  <span itemprop="streetAddress">68 Avenue Alsace-Lorraine,</span>
-				  <span itemprop="postalCode">33200</span>
-				  <span itemprop="addressLocality">Bordeaux, France</span>
-				</address>
-			  </a>
-			</li>
-			<li class="nav-item">
-			  <a href="tel:+33556677889" class="nav-link px-2 text-body-secondary mx-5" itemprop="telephone">Appelez-moi au 05.56.67.78.89</a>
-			</li>
-		  </ul>
-		  <p class="text-center text-body-secondary">
-			© 2023 Nina Carducci.
-			<time itemprop="openingHours" datetime="Mo-Fr 10:00−19:00">Ouvert du lundi au vendredi de 10h à 19h</time>
-		  </p>
-		</div>
-	  </footer>
 </main>
+<footer class="py-3 my-4">
+	<div itemscope itemtype="http://schema.org/PhotographyBusiness">
+		<ul class="nav justify-content-center border-bottom pb-3 mb-3">
+		<li class="nav-item">
+			<a href="https://www.google.com/maps/place/68+Av.+Alsace+Lorraine,+33200+Bordeaux/@44.8465743,-0.6065365,17z/data=!3m1!4b1!4m6!3m5!1s0xd54d803d3494ff1:0x775d19897dd6276f!8m2!3d44.8465743!4d-0.6065365!16s%2Fg%2F11c15dhy_v?entry=ttu" target="_blank" class="nav-link px-2 text-body-secondary mx-5" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+			<address>
+				<span itemprop="streetAddress">68 Avenue Alsace-Lorraine,</span>
+				<span itemprop="postalCode">33200</span>
+				<span itemprop="addressLocality">Bordeaux, France</span>
+			</address>
+			</a>
+		</li>
+		<li class="nav-item">
+			<a href="tel:+33556677889" class="nav-link px-2 text-body-secondary mx-5" itemprop="telephone">Appelez-moi au 05.56.67.78.89</a>
+		</li>
+		</ul>
+		<p class="text-center text-body-secondary">
+		© 2023 Nina Carducci.
+		<time itemprop="openingHours" datetime="Mo-Fr 10:00−19:00">Ouvert du lundi au vendredi de 10h à 19h</time>
+		</p>
+	</div>
+	</footer>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="./assets/maugallery.js"></script>
+<script src="./assets/scripts.js"></script>
 </body>
 </html>
